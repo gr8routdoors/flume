@@ -60,7 +60,7 @@ limitations under the License.
         </exclusion>
       </exclusions>
       <type>pom</type>
-      <optional>true</optional>
+      <!-- <optional>true</optional> Build all morphline dependencies -->
     </dependency>
 
     <dependency>
@@ -133,6 +133,24 @@ limitations under the License.
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+              <includeScope>runtime</includeScope> <!-- excludes test jars; see http://jira.codehaus.org/browse/MDEP-128 -->
+              <excludeScope>provided</excludeScope>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin> 
 
     </plugins>
   </build>
