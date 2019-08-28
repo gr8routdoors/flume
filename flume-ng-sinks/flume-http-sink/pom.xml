@@ -32,7 +32,7 @@ limitations under the License.
 
   <properties>
     <wiremock.version>1.53</wiremock.version>
-    <guava.version>18.0</guava.version>
+    <guava.version>23.0</guava.version>
   </properties>
 
   <build>
