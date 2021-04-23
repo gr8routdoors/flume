@@ -122,7 +122,7 @@ limitations under the License.
           <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.4.5</version>
+            <version>3.4.14</version>
             <scope>test</scope>
           </dependency>
         </dependencies>
@@ -198,7 +198,7 @@ limitations under the License.
           <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.4.5</version>
+            <version>3.4.14</version>
             <scope>test</scope>
           </dependency>
 
@@ -319,7 +319,7 @@ limitations under the License.
           <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.4.5</version>
+            <version>3.4.14</version>
             <scope>test</scope>
           </dependency>
 
